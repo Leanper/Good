@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/title_bar"
+    android:layout_width="match_parent"
+    android:layout_height="100px"
+    android:background="@color/colorTitle"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/title_normalview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/title_left_imageview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/title_left"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/title_left_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/title_textsize"
+                android:visibility="gone" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/title_middle_imageview"
+                android:layout_width="wrap_content"
+                android:layout_height="50px"
+                android:layout_gravity="center"
+                android:src="@mipmap/ic_launcher"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/title_middle_textview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/title_textsize"
+                android:visibility="gone" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/title_right_imageview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/title_left"
+                android:src="@mipmap/ic_launcher"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/title_right_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/title_left"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/title_textsize"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/title_moseright_imageview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/title_left"
+                android:visibility="gone" />
+        </com.zhy.autolayout.AutoLinearLayout>
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.zhy.autolayout.AutoFrameLayout
+        android:id="@+id/title_selfview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+    </com.zhy.autolayout.AutoFrameLayout>
+</com.zhy.autolayout.AutoRelativeLayout>

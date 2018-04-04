@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/ll_haden"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/colorTheme"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_head"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/micon" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_head"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="登录"
+            android:textColor="@color/colorWhite"
+            android:textSize="22sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorTheme" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPageBg">
+
+        <Button
+            android:id="@+id/btn_logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#c3c3c3"
+            android:text="退出登录"
+            android:textColor="@color/colorWhite" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:fitsSystemWindows="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="商家名称：" />
+
+                <TextView
+                    android:id="@+id/tv_company_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="地　　址：" />
+
+                <TextView
+                    android:id="@+id/tv_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="联系电话：" />
+
+                <TextView
+                    android:id="@+id/tv_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/colorTheme"
+                android:visibility="gone" />
+            <!--<FrameLayout-->
+            <!--android:id="@+id/fl_theme_color"-->
+            <!--style="@style/home.fragment">-->
+            <!--<TextView-->
+            <!--style="@style/home.textview"-->
+            <!--android:drawableLeft="@drawable/theme_color"-->
+            <!--android:text="个性换肤" />-->
+            <!--</FrameLayout>-->
+
+            <FrameLayout
+                android:id="@+id/fl_setting"
+                style="@style/home.fragment"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/home.textview"
+                    android:drawableLeft="@drawable/ic_menu_setting"
+                    android:text="提现设置" />
+            </FrameLayout>
+
+            <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:background="@color/colorTheme" />-->
+            <!--<FrameLayout-->
+            <!--android:id="@+id/fl_feedback"-->
+            <!--style="@style/home.fragment">-->
+            <!--<TextView-->
+            <!--style="@style/home.textview"-->
+            <!--android:drawableLeft="@drawable/feedback"-->
+            <!--android:text="意见反馈" />-->
+            <!--</FrameLayout>-->
+
+            <FrameLayout
+                android:id="@+id/fl_about"
+                style="@style/home.fragment"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/home.textview"
+                    android:drawableLeft="@drawable/about"
+                    android:text="关于" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/fl_exit_app"
+                style="@style/home.fragment"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/home.textview"
+                    android:drawableLeft="@drawable/ic_menu_exit_app"
+                    android:text="退出" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/fl_logout"
+                style="@style/home.fragment"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/home.textview"
+                    android:drawableLeft="@drawable/ic_menu_logout"
+                    android:text="退出登录"
+                    android:textSize="16sp" />
+            </FrameLayout>
+
+            <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:background="@color/colorTheme" />-->
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_nologin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorWhite"
+            android:clickable="true"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="你还没有登录\n点击头像登录"
+                android:textSize="22sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout><!--</android.support.v4.widget.NestedScrollView>-->

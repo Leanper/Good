@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:fitsSystemWindows="true"
+        android:minHeight="?attr/actionBarSize"
+        app:contentInsetStart="0.0dp"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <EditText
+        android:id="@+id/et_pwd_frist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/title_left"
+        android:layout_marginRight="@dimen/title_left"
+        android:layout_marginTop="20dp"
+        android:digits="1234567890"
+        android:hint="请输入6位数字密码"
+        android:maxLength="6"
+        android:singleLine="true"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/et_pwd_second"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/title_left"
+        android:layout_marginRight="@dimen/title_left"
+        android:digits="1234567890"
+        android:hint="请重复密码"
+        android:maxLength="6"
+        android:singleLine="true"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:textColor="@color/colorRateRed"/>
+    <Button
+        android:id="@+id/bt_check"
+        android:layout_width="690px"
+        android:layout_height="84px"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_selector"
+        android:text="确认"
+        android:textColor="@color/colorWhite"
+        android:textSize="32px" />
+
+</LinearLayout>
